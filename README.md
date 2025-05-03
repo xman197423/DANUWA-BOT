@@ -75,40 +75,6 @@
 
 ---
 
-## 💡 Example Commands
-
-```
-.song shape of you
-.video https://youtube.com/....
-.sticker (reply to image/video)
-.kick @user
-.promote @user
-.groupinfo
-```
-
-Use `.menu` or `.help` to see all commands.
-
----
-
-## 🔌 Plugin Development
-
-You can add custom commands easily by creating new files in the `/plugins` folder.
-
-```js
-const { cmd } = require('../command');
-
-cmd({
-  pattern: 'hello',
-  desc: 'Replies with hello',
-  category: 'fun',
-  filename: __filename
-}, async (m) => {
-  await m.reply('Hello from DANUWA-MD!');
-});
-```
-
----
-
 ## 🖥 Deploying on VPS (Linux)
 
 ```bash
@@ -123,9 +89,9 @@ pm2 startup
 
 ## 👨‍💻 Developer
 
-- **Name**: [Your Name]
-- **GitHub**: [github.com/your-username](https://github.com/your-username)
-- **Telegram**: [@yourhandle](https://t.me/yourhandle)
+- **Name**: [Danuka DIsanayaka]
+- **GitHub**: [github.com/your-username](https://github.com/DANUWA_MD)
+- **Youtube**: [@yourhandle](https://www.youtube.com/@quizontal)
 
 ---
 
