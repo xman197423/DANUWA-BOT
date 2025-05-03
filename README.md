@@ -1,5 +1,5 @@
 
-<p align="center">
+<p align="center"> 
   <img src="https://github.com/DANUWA-MD/DANUWA-BOT/blob/main/images/DANUWA-MD.png?raw=true" width="300"/>
 </p>
 
@@ -49,7 +49,17 @@
 
 2. **Get Your Session ID (Pairing Code)**
 
-   - [Session ID](https://a76d579e-db59-4147-b22b-fd07737c17c4-00-3i3ev0y5kjixl.sisko.replit.dev/)
+   - [Click Here to Generate Session ID](https://a76d579e-db59-4147-b22b-fd07737c17c4-00-3i3ev0y5kjixl.sisko.replit.dev/)
+
+---
+
+## ⚡ Deployment Method
+
+<p align="center">
+  <a href="https://replit.com/github/DANUWA-MD/DANUWA-BOT">
+    <img alt="Run on Replit" src="https://replit.com/badge/github/DANUWA-MD/DANUWA-BOT" />
+  </a>
+</p>
 
 ---
 
