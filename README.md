@@ -49,7 +49,7 @@
 
 2. **Get Your Session ID (Pairing Code)**
 
-   - [Click Here to Generate Session ID](https://a76d579e-db59-4147-b22b-fd07737c17c4-00-3i3ev0y5kjixl.sisko.replit.dev/)
+   - [Click Here to Generate Session ID](https://replit.com/@quizontalbot/DANUWA-MD-PAIR-CODE?v=1)
 
 ---
 
