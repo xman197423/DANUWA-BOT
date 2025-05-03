@@ -3,7 +3,7 @@
   <img src="https://github.com/DANUWA-MD/DANUWA-BOT/blob/main/images/DANUWA-MD.png?raw=true" width="300"/>
 </p>
 
-<h1 align="center">DANUWA-MD</h1>
+<h1 align="center">🔮  Ｄ  Ａ  Ｎ  Ｕ  Ｗ  Ａ  －  Ｍ  Ｄ  🔮</h1>
 
 <p align="center">
   A powerful multi-device WhatsApp bot built using the Baileys library.
