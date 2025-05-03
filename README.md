@@ -57,7 +57,7 @@
 
 <p align="left">
   <a href="https://replit.com/@quizontalbot/DANUWA-MD?v=1">
-    <img alt="Run on Replit" src="https://replit.com/@quizontalbot/DANUWA-MD?v=1" />
+    <img alt="Run on Replit" src="https://replit.com/badge/github/DANUWA-MD/DANUWA-BOT" />
   </a>
 </p>
 
