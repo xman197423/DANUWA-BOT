@@ -55,8 +55,8 @@
 
 ## ⚡ Deployment Method
 
-<p align="center">
-  <a href="https://replit.com/github/DANUWA-MD/DANUWA-BOT">
+<p align="left">
+  <a href="https://replit.com/@quizontalbot/DANUWA-MD?v=1#index.js">
     <img alt="Run on Replit" src="https://replit.com/badge/github/DANUWA-MD/DANUWA-BOT" />
   </a>
 </p>
