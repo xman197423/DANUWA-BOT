@@ -1,6 +1,6 @@
 
 <p align="center">
-  <img src="https://telegra.ph/file/17cb37c73de7b63cdd1c8.jpg" width="300"/>
+  <img src="https://github.com/DANUWA-MD/DANUWA-BOT/blob/main/images/DANUWA-MD.png?raw=true" width="300"/>
 </p>
 
 <h1 align="center">DANUWA-MD</h1>
@@ -42,16 +42,14 @@
 
 ### 🚀 Installation
 
-```bash
-git clone https://github.com/your-username/DANUWA-MD.git
-cd DANUWA-MD
-npm install
-npm start
-```
+1. **Fork the Repository**
 
-Then visit:  
-**http://localhost:3000**  
-Scan the QR code or paste the pairing code.
+   - Visit the repository on GitHub: [DANUWA-MD](https://github.com/DANUWA-MD/DANUWA-BOT)
+   - Click the **Fork** button at the top-right of the page to create your own copy of the repository.
+
+2. **Get Your Session ID (Pairing Code)**
+
+   - click here(https://a76d579e-db59-4147-b22b-fd07737c17c4-00-3i3ev0y5kjixl.sisko.replit.dev/)
 
 ---
 
@@ -98,67 +96,6 @@ cmd({
   await m.reply('Hello from DANUWA-MD!');
 });
 ```
-
----
-
-## 🖥 Deploying on Various Platforms
-
-### 🚀 Deploying on **Railway**
-
-1. Visit [Railway](https://railway.app/) and sign in.
-2. Click on **New Project** → **Deploy from GitHub**.
-3. Select the repository for **DANUWA-MD**.
-4. Railway will automatically install dependencies and deploy the bot.
-5. After deployment, access the bot via the URL provided by Railway.
-
-##### Example for environment variables (if needed):
-Add these variables in the **Railway** dashboard under **Settings > Variables**:
-- `SESSION_ID` (optional if using session-based auth)
-- `ADMIN` (optional, to specify the admin)
-
-### 🚀 Deploying on **Replit**
-
-1. Go to [Replit](https://replit.com/) and log in.
-2. Click on **Create New Repl** → Choose **Node.js**.
-3. Connect your **GitHub** repository by selecting **Import from GitHub**.
-4. After importing, run the following command in the **Shell**:
-    ```bash
-    npm install
-    ```
-5. Set up **Environment Variables** by navigating to **Secrets (Environment Variables)** and adding necessary keys like:
-    - `SESSION_ID`
-    - `ADMIN`
-6. Run the bot using **Start** in the Replit interface.
-7. Replit provides a URL for the bot, and you'll need to set up a webhook for continuous operation using the Replit uptime service.
-
-### 🚀 Deploying on **Heroku**
-
-1. Visit [Heroku](https://heroku.com/) and log in.
-2. Create a new **Heroku App** from your **Heroku Dashboard**.
-3. Link your **GitHub** repository with Heroku.
-4. In the **Deploy** tab, select **GitHub** as the deployment method.
-5. Set up necessary environment variables:
-    - `SESSION_ID`
-    - `ADMIN`
-6. After deployment, your app will be live on a **Heroku URL**.
-
-##### Example steps to set up:
-- Open the **Heroku CLI** and run:
-    ```bash
-    heroku login
-    heroku create
-    git push heroku main
-    ```
-
-### 🚀 Deploying on **Koyeb**
-
-1. Visit [Koyeb](https://www.koyeb.com/) and log in.
-2. Click **Create App** and choose **Deploy from GitHub**.
-3. Select **DANUWA-MD** repository and configure the deployment.
-4. Set up **Environment Variables** in the Koyeb dashboard:
-    - `SESSION_ID`
-    - `ADMIN`
-5. Koyeb will build and deploy the app. You'll receive a **URL** for your bot.
 
 ---
 
