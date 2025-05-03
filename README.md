@@ -49,7 +49,7 @@
 
 2. **Get Your Session ID (Pairing Code)**
 
-   - click here(https://a76d579e-db59-4147-b22b-fd07737c17c4-00-3i3ev0y5kjixl.sisko.replit.dev/)
+   - [Session ID](https://a76d579e-db59-4147-b22b-fd07737c17c4-00-3i3ev0y5kjixl.sisko.replit.dev/)
 
 ---
 
