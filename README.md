@@ -145,7 +145,7 @@ jobs:
     - run: npm start
     - run: npm test
 
-    ```
+ ```
 
 5. Once pasted, **commit the changes**.
 
