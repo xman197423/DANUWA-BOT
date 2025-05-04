@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center">
-  <img src="https://github.com/DANUWA-MD/DANUWA-BOT/blob/main/images/readme%20image.png?raw=true" width="540" alt="DANUWA-MD Logo" style="border-radius: 15px; box-shadow: 0 0 20px #00ffe5, 0 0 30px #00ffe5, 0 0 40px #00ffe5;">
+  <img src="https://github.com/DANUWA-MD/DANUWA-BOT/blob/main/images/readme%20image.png?raw=true" width="540" alt="DANUWA-MD Logo" style="border-radius: 50px; box-shadow: 0 0 20px #00ffe5, 0 0 30px #00ffe5, 0 0 40px #00ffe5;">
 </p> 
 
 <p align="center">
@@ -176,7 +176,7 @@ DANUWA-MD is designed with scalability, flexibility, and functionality in mind. 
 ## 👨‍💻 Developer
 
 <p align="center">
-  <img src="https://github.com/DANUWA-MD/DANUWA-MD/blob/main/images%20/Danuka%20Dissanayake.jpg?raw=true" width="540" style="border-radius: 15px;" alt="Danuka Disanayaka"/>
+  <img src="https://github.com/DANUWA-MD/DANUWA-MD/blob/main/images%20/Danuka%20Dissanayake.jpg?raw=true" width="540" style="border-radius: 50px;" alt="Danuka Disanayaka"/>
 </p>
 
 <p align="center"><b>Danuka Disanayaka</b></p>
