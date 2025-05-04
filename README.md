@@ -112,6 +112,7 @@ After you've added your **session ID** and updated the **owner number** in `conf
 3. Once the workflow editor opens, **delete all the existing code** inside the editor.
 
 4. **Copy and paste** the following GitHub Actions configuration into the editor:
+
 ```
 # This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
 # For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-nodejs
