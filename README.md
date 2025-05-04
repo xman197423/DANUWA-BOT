@@ -55,9 +55,22 @@
 
 ## ⚡ Deployment Method
 
-[![🚀 LAUNCH IN GITHUB CODESPACES](https://img.shields.io/badge/🚀%20LAUNCH%20IN-GITHUB%20CODESPACES-blue?logo=github&style=for-the-badge)](https://github.com/codespaces/new?hide_repo_select=true&repo=danuwa-bot/DANUWA-MD)  
-[![⚡ START IN REPLIT](https://img.shields.io/badge/⚡%20START%20IN-REPLIT-4631D4?logo=replit&logoColor=white&style=for-the-badge)](https://replit.com/github/danuwa-bot/DANUWA-MD)
+[![🚀 DEPLOY IN GITHUB CODESPACES](https://img.shields.io/badge/🚀%20LAUNCH%20IN-GITHUB%20CODESPACES-blue?logo=github&style=for-the-badge)](https://github.com/codespaces/new?hide_repo_select=true&repo=danuwa-bot/DANUWA-MD)  
+[![⚡ DEPLOY IN REPLIT](https://img.shields.io/badge/⚡%20START%20IN-REPLIT-4631D4?logo=replit&logoColor=white&style=for-the-badge)](https://replit.com)
 
+---
+
+## ⚡ How to Deploy DANUWA-MD on Replit
+
+1. Click the **"Run on Replit"** button above to begin deployment.  
+2. Log in to [Replit](https://replit.com) using your **GitHub account** if prompted.  
+3. On your Replit dashboard, click the **➕ “Create Repl”** button in the left sidebar.  
+4. Select **“Import from GitHub”** and paste the link to your **forked `DANUWA-MD` repository**.  
+5. Replit will automatically import and set up your project.  
+6. Once ready, click the **“Run”** button at the top — the bot will start and show logs in the console.
+
+✅ **Note:**  
+Make sure your repository includes all required files (`index.js`, `plugins`, `auth/`, etc.) and no essential configuration is missing.
 
 ---
 
