@@ -3,8 +3,8 @@
 </h1>
 
 <p align="center">
-  <img src="https://github.com/DANUWA-MD/DANUWA-BOT/blob/main/images/readme%20image.png?raw=true" width="540" alt="DANUWA-MD Logo" style="border-radius: 10%; box-shadow: 0 0 20px #00ffe5, 0 0 30px #00ffe5, 0 0 40px #00ffe5;">
-</p>
+  <img src="https://github.com/DANUWA-MD/DANUWA-BOT/blob/main/images/readme%20image.png?raw=true" width="540" alt="DANUWA-MD Logo" style="border-radius: 15px; box-shadow: 0 0 20px #00ffe5, 0 0 30px #00ffe5, 0 0 40px #00ffe5;">
+</p> 
 
 <p align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=10B981&center=true&vCenter=true&width=600&lines=Hello+How+are+you%3F;Welcome+to+DANUWA-MD+WhatsApp+Bot.;I'm+Danuka+Disanayaka." alt="Typing SVG" />
@@ -172,7 +172,7 @@ DANUWA-MD is designed with scalability, flexibility, and functionality in mind. 
 ## 👨‍💻 Developer
 
 <p align="center">
-  <img src="https://github.com/DANUWA-MD/DANUWA-MD/blob/main/images%20/Danuka%20Dissanayake.jpg?raw=true" width="540" style="border-radius: 50%;" alt="Danuka Disanayaka"/>
+  <img src="https://github.com/DANUWA-MD/DANUWA-MD/blob/main/images%20/Danuka%20Dissanayake.jpg?raw=true" width="540" style="border-radius: 15px;" alt="Danuka Disanayaka"/>
 </p>
 
 <p align="center"><b>Danuka Disanayaka</b></p>
