@@ -55,11 +55,9 @@
 
 ## ⚡ Deployment Method
 
-<p align="left">
-  <a href="https://replit.com/@quizontalbot/DANUWA-MD?v=1">
-    <img alt="Run on Replit" src="https://replit.com/badge/github/DANUWA-MD/DANUWA-BOT" />
-  </a>
-</p>
+[![🚀 LAUNCH IN GITHUB CODESPACES](https://img.shields.io/badge/🚀%20LAUNCH%20IN-GITHUB%20CODESPACES-blue?logo=github&style=for-the-badge)](https://github.com/codespaces/new?hide_repo_select=true&repo=danuwa-bot/DANUWA-MD)  
+[![⚡ START IN REPLIT](https://img.shields.io/badge/⚡%20START%20IN-REPLIT-4631D4?logo=replit&logoColor=white&style=for-the-badge)](https://replit.com/github/danuwa-bot/DANUWA-MD)
+
 
 ---
 
