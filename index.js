@@ -5,7 +5,9 @@ const {
   jidNormalizedUser,
   getContentType,
   fetchLatestBaileysVersion,
-  Browsers
+  Browsers,
+  downloadMediaMessage,
+  proto: WAProto
 } = require('@whiskeysockets/baileys');
 
 const fs = require('fs');
@@ -14,10 +16,9 @@ const config = require('./config');
 const util = require('util');
 const axios = require('axios');
 const qrcode = require('qrcode-terminal');
-const { sms, downloadMediaMessage } = require('./lib/msg');
+const { sms } = require('./lib/msg');
 const { getBuffer, getGroupAdmins, getRandom, h2k, isUrl, Json, runtime, sleep, fetchJson } = require('./lib/functions');
 const { File } = require('megajs');
-
 const express = require("express");
 const app = express();
 const port = process.env.PORT || 8000;
@@ -26,13 +27,13 @@ const prefix = '.';
 const ownerNumber = ['94776121326'];
 
 if (!fs.existsSync(__dirname + '/auth_info_baileys/creds.json')) {
-  if (!config.SESSION_ID) return console.log('Please add your session to SESSION_ID env !!');
+  if (!config.SESSION_ID) return console.log('❗ [DANUWA-MD] SESSION_ID not found in env. Please configure it.');
   const sessdata = config.SESSION_ID;
   const filer = File.fromURL(`https://mega.nz/file/${sessdata}`);
   filer.download((err, data) => {
     if (err) throw err;
     fs.writeFile(__dirname + '/auth_info_baileys/creds.json', data, () => {
-      console.log("Session downloaded ✅");
+      console.log("📥 [DANUWA-MD] Session file downloaded and saved.");
     });
   });
 }
@@ -40,7 +41,7 @@ if (!fs.existsSync(__dirname + '/auth_info_baileys/creds.json')) {
 const { replyHandlers, commands } = require('./command');
 
 async function connectToWA() {
-  console.log("Connecting wa bot 🧬...");
+  console.log("🛰️ [DANUWA-MD] Initializing WhatsApp connection...");
   const { state, saveCreds } = await useMultiFileAuthState(__dirname + '/auth_info_baileys/');
   const { version } = await fetchLatestBaileysVersion();
 
@@ -58,18 +59,18 @@ async function connectToWA() {
     if (connection === 'close' && lastDisconnect?.error?.output?.statusCode !== DisconnectReason.loggedOut) {
       connectToWA();
     } else if (connection === 'open') {
-      console.log('😼 Installing... ');
+      console.log("🔧 [DANUWA-MD] Installing plugins...");
       const path = require('path');
       fs.readdirSync("./plugins/").forEach((plugin) => {
         if (path.extname(plugin).toLowerCase() === ".js") {
           require("./plugins/" + plugin);
         }
       });
-      console.log('Plugins installed successful ✅');
-      console.log('DANUWA-MD connected to whatsapp ✅');
+      console.log("✅ [DANUWA-MD] Plugins installed successfully.");
+      console.log("📶 [DANUWA-MD] Successfully connected to WhatsApp!");
 
-      const up = `DANUWA-MD connected successful ✅\n\nPREFIX: ${prefix}`;
-      conn.sendMessage(ownerNumber + "@s.whatsapp.net", {
+      const up = `*𝐻𝑒𝓎 𝒟𝓊𝒹𝑒, 𝐼 𝒶𝓂 𝑜𝓃𝓁𝒾𝓃𝑒...𝐻𝑜𝓌 𝒸𝒶𝓃 𝒾 𝒽𝑒𝓁𝓅 𝓎𝑜𝓊 ?*💗\n\n*Here is profile information*\n*🔐Owner:* Danuka Disanayaka\n*👤Username:* DANUWA-MD \n*⚡Bio:* WhatsApp Bot\n*🧩 Role:* 🧙‍♂️Wizard Lord\n\n🚀 Powered By  *DANUKA* \n*DISANAYAKA* 🔥`;
+      conn.sendMessage(ownerNumber[0] + "@s.whatsapp.net", {
         image: { url: `https://github.com/DANUWA-MD/DANUWA-MD/blob/main/images/DANUWA-MD.png?raw=true` },
         caption: up
       });
@@ -82,11 +83,20 @@ async function connectToWA() {
     const mek = messages[0];
     if (!mek || !mek.message) return;
 
-    mek.message = (getContentType(mek.message) === 'ephemeralMessage')
-      ? mek.message.ephemeralMessage.message
-      : mek.message;
+    let message = mek.message;
+    if (getContentType(message) === 'ephemeralMessage') message = message.ephemeralMessage.message;
+    if (getContentType(message) === 'viewOnceMessage') message = message.viewOnceMessage.message;
+    mek.message = message;
 
-    if (mek.key.remoteJid === 'status@broadcast') return;
+   if (mek.key.remoteJid === 'status@broadcast' && config.AUTO_READ_STATUS === "true") {
+  try {
+    await conn.readMessages([mek.key]);
+    console.log("[STATUS] ✅ Status message marked as read.");
+  } catch (err) {
+    console.error('[STATUS ERROR] Failed to auto-read status:', err.message);
+  }
+}
+
 
     const m = sms(conn, mek);
     const type = getContentType(mek.message);
@@ -118,7 +128,6 @@ async function connectToWA() {
 
     const reply = (text) => conn.sendMessage(from, { text }, { quoted: mek });
 
-    // 🎯 Main Command Handler
     if (isCmd) {
       const cmd = commands.find((c) => c.pattern === commandName || (c.alias && c.alias.includes(commandName)));
       if (cmd) {
@@ -137,7 +146,6 @@ async function connectToWA() {
       }
     }
 
-    // 📩 Reply Handler (e.g., reply with a number)
     const replyText = body;
     for (const handler of replyHandlers) {
       if (handler.filter(replyText, { sender, message: mek })) {
@@ -158,7 +166,7 @@ app.get("/", (req, res) => {
   res.send("Hey, DANUWA-MD started✅");
 });
 
-app.listen(port, () => console.log(`Server listening on http://localhost:${port}`));
+app.listen(port, () => console.log(`🌐 [DANUWA-MD] Web server running → http://localhost:${port}`));
 
 setTimeout(() => {
   connectToWA();
