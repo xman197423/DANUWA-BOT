@@ -11,7 +11,6 @@ const API_KEY = config.MOVIE_API_KEY;
 
 cmd({
     pattern: "movie",
-    alias: ["moviedl", "films"],
     react: '🎬',
     category: "download",
     desc: "Search and download movies from PixelDrain",
