@@ -40,7 +40,7 @@ cmd(
 
       const sticker = new Sticker(fileName, {
         pack: pushname || "DANUWA-MD",
-        author: "StickerBot",
+        author: "🔥 ＤＡＮＵＷＡ－ＭＤ 🔥",
         type: isCrop ? StickerTypes.CROPPED : StickerTypes.FULL,
         categories: ["🤖", "🔥"],
         id: "danuwa-md-sticker",
