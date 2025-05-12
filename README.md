@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center">
-  <img src="https://github.com/DANUWA-MD/DANUWA-MD/blob/main/images/danuwa-md%20(2).png?raw=true" width="540" alt="DANUWA-MD Logo" style="border-radius: 50px; box-shadow: 0 0 20px #00ffe5, 0 0 30px #00ffe5, 0 0 40px #00ffe5;">
+  <img src="https://github.com/DANUWA-MD/DANUWA-MD/blob/main/images/danuwa-md%20(2).png?raw=true" alt="DANUWA-MD Logo" style="border-radius: 50px; box-shadow: 0 0 20px #00ffe5, 0 0 30px #00ffe5, 0 0 40px #00ffe5;">
 </p> 
 
 <p align="center">
