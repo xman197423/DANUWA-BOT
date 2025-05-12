@@ -18,16 +18,16 @@
 
 <p align="center">
   <a href="https://github.com/your-username/DANUWA-MD">
-    <img src="https://img.shields.io/github/repo-size/your-username/DANUWA-MD?color=green&label=Repo%20Size&style=flat-square" />
+    <img src="https://img.shields.io/github/repo-size/DANUWA-MD/DANUWA-MD?color=green&label=Repo%20Size&style=flat-square" />
   </a>
   <a href="https://github.com/your-username/DANUWA-MD">
-    <img src="https://img.shields.io/github/license/your-username/DANUWA-MD?color=blue&style=flat-square" />
+    <img src="https://img.shields.io/github/license/DANUWA-MD/DANUWA-MD?color=blue&style=flat-square" />
   </a>
   <a href="https://github.com/your-username/DANUWA-MD/fork">
-    <img src="https://img.shields.io/github/forks/your-username/DANUWA-MD?style=flat-square" />
+    <img src="https://img.shields.io/github/forks/DANUWA-MD/DANUWA-MD?style=flat-square" />
   </a>
   <a href="https://github.com/your-username/DANUWA-MD/stargazers">
-    <img src="https://img.shields.io/github/stars/your-username/DANUWA-MD?style=flat-square" />
+    <img src="https://img.shields.io/github/stars/DANUWA-MD/DANUWA-MD?style=flat-square" />
   </a>
 </p>
 
