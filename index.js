@@ -71,7 +71,7 @@ async function connectToWA() {
 
       const up = `*𝐻𝑒𝓎 𝒟𝓊𝒹𝑒, 𝐼 𝒶𝓂 𝑜𝓃𝓁𝒾𝓃𝑒...𝐻𝑜𝓌 𝒸𝒶𝓃 𝒾 𝒽𝑒𝓁𝓅 𝓎𝑜𝓊 ?*💗\n\n*Here is profile information*\n*🔐Owner:* Danuka Disanayaka\n*👤Username:* DANUWA-MD \n*⚡Bio:* WhatsApp Bot\n*🧩 Role:* 🧙‍♂️Wizard Lord\n\n🚀 Powered By  *DANUKA* \n*DISANAYAKA* 🔥`;
       conn.sendMessage(ownerNumber[0] + "@s.whatsapp.net", {
-        image: { url: `https://github.com/DANUWA-MD/DANUWA-MD/blob/main/images/DANUWA-MD.png?raw=true` },
+        image: { url: `https://github.com/DANUWA-MD/DANUWA-BOT/blob/main/images/Danuwa%20-%20MD.png?raw=true` },
         caption: up
       });
     }
