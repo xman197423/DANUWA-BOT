@@ -1,4 +1,3 @@
-// Obfuscated with JavaScript Obfuscator
 (function () {
   const _0x4501d3 = require;
   const _0x321c = [
