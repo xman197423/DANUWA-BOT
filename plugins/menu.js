@@ -4,6 +4,7 @@ const config = require("../config");
 cmd(
   {
     pattern: "menu",
+    react: '⚙',
     desc: "Displays all available commands",
     category: "main",
     filename: __filename,
@@ -21,14 +22,14 @@ cmd(
     try {
       const categoryEmojis = {
         main: "📁",
-        owner: "👑",
-        group: "👥",
-        tools: "🛠️",
-        media: "🎞️",
-        download: "📥",
-        fun: "🎮",
-        search: "🔍",
-        other: "❓"
+        owner: "📁",
+        group: "📁",
+        tools: "📁",
+        media: "📁",
+        download: "📁",
+        fun: "📁",
+        search: "📁",
+        other: "📁"
       };
 
       let heading = `
