@@ -1,5 +1,5 @@
 <h1 align="center" style="font-weight:bold;">
-  🔥 ＤＡＮＵＷＡ－ＭＤ 🔥
+⚡ Ｄ Ａ Ｎ Ｕ Ｗ Ａ － Ｍ Ｄ ⚡
 </h1>
 
 <p align="center">
@@ -35,17 +35,25 @@
 
 ## 📍 What is DANUWA-MD?
 
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&duration=3000&pause=1000&color=10B981&center=true&vCenter=true&width=600&lines=Multi-device+WhatsApp+bot;Modular+plugin+architecture;Media+and+group+management+tools" alt="Typing SVG" />
+</p>
+
 **DANUWA-MD** is a multi-device WhatsApp bot written in Node.js using the [Baileys](https://github.com/adiwajshing/Baileys) library. It supports QR/Pairing code login, a plugin-based command system, and various media tools such as sticker conversion, song and video downloads, and group management commands.
 
 ---
 
 ## 🛠️ Setup
 
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&duration=3000&pause=1000&color=10B981&center=true&vCenter=true&width=600&lines=Easy+setup+with+session+ID;Optional+API+integrations;Quick+installation+steps" alt="Typing SVG" />
+</p>
+
 ### 🧾 Requirements
 
-- Node.js v18 or newer  
-- FFmpeg installed and accessible in your terminal  
-- A WhatsApp account with multi-device enabled  
+- Session ID  
+- Gemini API (Optional)
+- Skymantion API (Optional)
 
 ### 🚀 Installation
 
@@ -56,11 +64,17 @@
    [Generate Session ID](https://replit.com/@quizontalbot/DANUWA-MD-PAIR-CODE?v=1)
 
 3. **Configure Session and Owner Info**  
-   Edit `config.js` with your session ID and owner number (international format)
+ - Edit `config.js` with your session ID and owner number (international format)
+ - Edit `config.js` with your Gemini API Key (Optional)
+ - Edit `config.js` with your Skymantion API Key (Optional)
 
 ---
 
 ## ⚡ Deployment Methods
+
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&duration=3000&pause=1000&color=10B981&center=true&vCenter=true&width=600&lines=Deploy+via+GitHub+Codespaces;Deploy+via+GitHub+Actions;Deploy+via+Replit" alt="Typing SVG" />
+</p>
 
 [![🚀 DEPLOY IN GITHUB CODESPACES](https://img.shields.io/badge/🚀%20DEPLOY%20IN-GITHUB%20CODESPACES-blue?logo=github&style=for-the-badge)](https://github.com/codespaces/new?hide_repo_select=true&repo=danuwa-bot/DANUWA-MD)  
 [![⚡ DEPLOY IN REPLIT](https://img.shields.io/badge/⚡%20DEPLOY%20IN-REPLIT-4631D4?logo=replit&logoColor=white&style=for-the-badge)](https://replit.com)  
@@ -69,6 +83,10 @@
 ---
 
 ## 🧑‍💻 How to Deploy DANUWA-MD on GitHub Codespaces
+
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&duration=3000&pause=1000&color=10B981&center=true&vCenter=true&width=600&lines=Step-by-step+deployment+guide;Install+dependencies+and+start+bot" alt="Typing SVG" />
+</p>
 
 1. Click the **"Launch in GitHub Codespaces"** button above.
 2. Sign in with your GitHub account if needed.
@@ -89,6 +107,10 @@
 
 ## ⚡ How to Deploy DANUWA-MD on Replit
 
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&duration=3000&pause=1000&color=10B981&center=true&vCenter=true&width=600&lines=Step-by-step+deployment+guide;Install+dependencies+and+start+bot" alt="Typing SVG" />
+</p>
+
 1. Click the **"Run on Replit"** button above to begin deployment.  
 2. Log in to [Replit](https://replit.com) using your **GitHub account** if prompted.  
 3. On your Replit dashboard, click the **➕ “Create Repl”** button in the left sidebar.  
@@ -102,6 +124,10 @@ Make sure your repository includes all required files (`index.js`, `plugins`, `a
 ---
 
 ## 🚀 How to Deploy DANUWA-MD on GitHub (via Actions)
+
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&duration=3000&pause=1000&color=10B981&center=true&vCenter=true&width=600&lines=Deploy+via+workflow+YAML;Push+and+run+automatically" alt="Typing SVG" />
+</p>
 
 After you've added your **session ID** and updated the **owner number** in `config.js`, follow these steps to deploy your bot using **GitHub Actions**:
 
@@ -158,6 +184,10 @@ jobs:
 
 ## ✅ Features
 
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&duration=3000&pause=1000&color=10B981&center=true&vCenter=true&width=600&lines=Fast%2C+lightweight%2C+and+modular;Smart+commands+and+media+support;Built+with+Baileys" alt="Typing SVG" />
+</p>
+
 DANUWA-MD is designed with scalability, flexibility, and functionality in mind. Here’s what it offers:
 
 | Category          | Description |
@@ -166,20 +196,54 @@ DANUWA-MD is designed with scalability, flexibility, and functionality in mind. 
 | **📱 QR/Pairing Login** | Secure and easy authentication via QR code or pairing session. |
 | **📦 Modular Plugin Architecture** | Easily extend functionality with a clean, plugin-based command system. |
 | **🎵 Media Tools** | Download music and videos from platforms like YouTube, Facebook, and more. |
-| **🖼️ Sticker Tools** | Convert images and videos to high-quality stickers in WebP format. |
+| **🖼️ Sticker Tools** | Convert images, videos, and GIFs to high-quality stickers in WebP format. |
 | **👥 Group Management** | Manage WhatsApp groups with commands to add, remove, promote, demote, etc. |
-| **🧠 Smart Interaction** | Reply-based command handling for a more interactive user experience. |
-| **⚙️ Developer Friendly** | Built in Node.js with clean structure, ideal for contributors and customization. |
+| **🧠 Smart Interaction** | Reply-based command handling for a more interactive and context-aware experience. |
+| **⚙️ Developer Friendly** | Built in Node.js with a clean, modular structure—perfect for customization and contributions. |
+| **🗂️ File Handling** | Upload, download, and manage documents, past papers, and media files with ease. |
+| **🔍 Search Utilities** | Fetch results from Google, Wikipedia, and other sources directly from chat. |
+| **🎮 Fun & Games** | Enjoy mini-games, quizzes, and entertainment commands built-in for engagement. |
+| **🛡️ Admin Tools** | Enable anti-link, auto-delete, welcome/goodbye messages, and other moderation features. |
+| **🌐 Web Integration** | Supports express server for web-based pairing and API usage. |
+| **📝 Notes & Reminders** | Save notes, set reminders, and manage personal data through chat commands. |
+| **📊 Stats & Uptime** | Get bot performance data, uptime tracking, and usage analytics. |
+| **🌍 Language Support** | Easily switch between multiple languages with dynamic localization support. |
+
+---
+
+## 🛠️ Coming Soon
+
+We’re constantly improving DANUWA-MD to bring more power to your fingertips. Here’s what’s on the roadmap:
+
+| Feature               | Description |
+|------------------------|-------------|
+| **🤖 AI Chat Integration** | Integration with ChatGPT or other LLMs for intelligent conversations and query handling. |
+| **📚 Educational Tools** | Access to school syllabi, timetables, and educational content for students. |
+| **💬 Auto Reply & Scheduler** | Set up automated replies and scheduled messages for improved automation. |
+| **🎧 Voice Command Support** | Execute bot commands using voice messages for hands-free interaction. |
+| **📥 Advanced Downloader** | Support for batch downloads, subtitle fetching, and audio format selection. |
+| **📂 Cloud Storage Sync** | Integration with Google Drive, MEGA, and OneDrive for media management. |
+| **📈 Advanced Analytics** | Detailed usage stats per user/group, plugin insights, and activity heatmaps. |
+| **🔐 User Profiles & Permissions** | Role-based access control for different users (admin, user, guest). |
+| **📲 Companion App** | Mobile-friendly frontend for managing plugins, sessions, and logs visually. |
+| **🎨 Custom UI Themes** | Customize bot response styles, sticker frames, and preview cards. |
+
 
 ---
 
 ## 👨‍💻 Developer
 
 <p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&duration=3000&pause=1000&color=10B981&center=true&vCenter=true&width=600&lines=Danuka+Dissanayaka;Full+Stack+Developer;Creator+Of+DANUWA-MD" alt="Typing SVG" />
+</p>
+
+<p align="center">
   <img src="https://github.com/DANUWA-MD/DANUWA-MD/blob/main/images%20/Danuka%20Dissanayake.jpg?raw=true" width="540" style="border-radius: 50px;" alt="Danuka Disanayaka"/>
 </p>
 
-<p align="center"><b>Danuka Disanayaka</b></p>
+<h1 align="center" style="color:#10B981; font-weight:bold;">
+  Danuka Disanayaka
+</h1>
 
 <p align="center">
 Danuka Disanayaka is a passionate full-stack developer and automation enthusiast with a focus on building scalable bots, AI integrations, and open-source tools. With a deep understanding of JavaScript, Node.js, and real-time systems, Harshana actively contributes to the developer community by creating tools that simplify communication and task automation. His work emphasizes clean code, performance, and user-centric design.
@@ -206,4 +270,4 @@ This project is licensed under the [MIT License](./LICENSE).
 
 If you like this project, don’t forget to ⭐️ the repo!
 
-> Made with 💖 by DANUWA-MD Team
+> ⚙️ Made with ❤️ by **DANUKA DISSANAYAKA**🔥
