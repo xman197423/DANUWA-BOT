@@ -4,33 +4,23 @@ const config = require("../config");
 cmd(
   {
     pattern: "menu",
-    react: '⚙',
     desc: "Displays all available commands",
     category: "main",
     filename: __filename,
   },
-  async (
-    conn,
-    mek,
-    m,
-    {
-      from,
-      pushname,
-      reply
-    }
-  ) => {
+  async (conn, mek, m, { from, pushname, reply }) => {
     try {
-      const categoryEmojis = {
-        main: "📁",
-        owner: "📁",
-        group: "📁",
-        tools: "📁",
-        media: "📁",
-        download: "📁",
-        fun: "📁",
-        search: "📁",
-        other: "📁"
-      };
+      const categoryOrder = [
+        "main",
+        "owner",
+        "group",
+        "tools",
+        "media",
+        "download",
+        "fun",
+        "search",
+        "other"
+      ];
 
       let heading = `
             🌟 𝗪𝗘𝗟𝗖𝗢𝗠𝗘 𝗧𝗢 🌟    
@@ -41,46 +31,70 @@ cmd(
 ════════════════════════   
 `;
 
-      let menuText = ``;
-
+      let menuText = "";
       const categories = {};
 
       for (let cmdName in commands) {
         const cmdData = commands[cmdName];
         const cat = cmdData.category?.toLowerCase() || "other";
+
         if (!categories[cat]) categories[cat] = [];
+
         categories[cat].push({
           pattern: cmdData.pattern,
-          desc: cmdData.desc || "No description"
+          alias: Array.isArray(cmdData.alias)
+            ? cmdData.alias
+            : cmdData.alias
+            ? [cmdData.alias]
+            : [],
+          desc: cmdData.desc || "No description",
         });
       }
 
-      for (const [cat, cmds] of Object.entries(categories)) {
-        const emoji = categoryEmojis[cat] || "📂";
-        menuText += `\n${emoji} *${cat.toUpperCase()}*\n─────────────────────────\n`;
-        cmds.forEach(c => {
-          menuText += `🔹 *${c.pattern}* — ${c.desc}\n`;
+      for (const cat of categoryOrder) {
+        if (!categories[cat]) continue;
+        const cmds = categories[cat];
+        cmds.sort((a, b) => a.pattern.localeCompare(b.pattern));
+        menuText += `\n📁 *${cat.toUpperCase()}*\n─────────────────────────\n`;
+        cmds.forEach((c) => {
+          menuText += `🔹 *${c.pattern}*\n`;
+          if (c.alias.length > 0) {
+            menuText += `⚡ _Alias:_ ${c.alias.join(", ")}\n`;
+          }
+          menuText += `📝 _Description:_ ${c.desc}\n\n`;
         });
       }
+
+      const totalCommands = Object.keys(commands).length;
 
       menuText += `
 ════════════════════════   
-🚀 Powered By  ${config.BOT_NAME || '*DANUKA DISANAYAKA* 🔥'}
+🧰 Total commands: ${totalCommands}
+─────────────────────────
+🚀 Powered By  ${config.BOT_NAME || "*DANUKA DISANAYAKA* 🔥"}
+
+Thank you for using the bot! ✨
 `;
 
       await conn.sendMessage(
         from,
         {
           image: {
-            url: config.ALIVE_IMG || "https://github.com/DANUWA-MD/DANUWA-BOT/blob/main/images/Danuwa%20-%20MD.png?raw=true",
+            url:
+              config.ALIVE_IMG ||
+              "https://github.com/DANUWA-MD/DANUWA-BOT/blob/main/images/Danuwa%20-%20MD.png?raw=true",
           },
-          caption: heading + menuText
+          caption: heading + "\n" + menuText,
         },
         { quoted: mek }
       );
     } catch (err) {
       console.error(err);
-      reply("❌ Error generating menu.");
+      try {
+        await reply("❌ Error generating menu.");
+      } catch {
+        await conn.sendMessage(from, { text: "❌ Error generating menu." });
+      }
     }
   }
 );
