@@ -4,6 +4,7 @@ const config = require("../config");
 cmd(
   {
     pattern: "menu",
+    react: "⚙"
     desc: "Displays all available commands",
     category: "main",
     filename: __filename,
@@ -72,8 +73,6 @@ cmd(
 🧰 Total commands: ${totalCommands}
 ─────────────────────────
 🚀 Powered By  ${config.BOT_NAME || "*DANUKA DISANAYAKA* 🔥"}
-
-Thank you for using the bot! ✨
 `;
 
       await conn.sendMessage(
