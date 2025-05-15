@@ -78,7 +78,7 @@
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&duration=3000&pause=1000&color=10B981&center=true&vCenter=true&width=600&lines=Deploy+via+GitHub+Codespaces;Deploy+via+GitHub+Actions;Deploy+via+Replit" alt="Typing SVG" />
 </p>
 
-[![🚀 DEPLOY IN GITHUB CODESPACES](https://img.shields.io/badge/🚀%20DEPLOY%20IN-GITHUB%20CODESPACES-blue?logo=github&style=for-the-badge)](https://github.com/codespaces/new?hide_repo_select=true&repo=danuwa-bot/DANUWA-MD)  
+[![🚀 DEPLOY IN Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&repo=DANUWA-MD%2FDANUWA-BOT)
 [![🚀 DEPLOY IN Replit](https://replit.com/badge/github/DANUWA-MD/DANUWA-BOT)](https://replit.com/new/github/DANUWA-MD/DANUWA-BOT)
 [![🚀 DEPLOY IN GITHUB](https://img.shields.io/badge/🚀%20DEPLOY%20IN-GITHUB%20ACTIONS-blue?logo=githubactions&style=for-the-badge)](https://github.com/your-username/DANUWA-MD/actions)
 
