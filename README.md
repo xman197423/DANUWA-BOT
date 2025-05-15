@@ -53,6 +53,7 @@
 
 - Session ID  
 - Gemini API (Optional)
+- OPENAI(gpt-4to-mini) API (Optional)
 - Skymantion API (Optional)
 
 ### 🚀 Installation
@@ -66,6 +67,7 @@
 3. **Configure Session and Owner Info**  
  - Edit `config.js` with your session ID and owner number (international format)
  - Edit `config.js` with your Gemini API Key (Optional)
+ - Edit `config.js` with your OPENAI(gpt-4to-mini) API Key (Optional)
  - Edit `config.js` with your Skymantion API Key (Optional)
 
 ---
