@@ -28,7 +28,7 @@ cmd(
     const buffer = canvas.toBuffer("image/png");
     const fileName = getRandom(".png");
     await fs.writeFile(fileName, buffer);
-    await robin.sendMessage(m.chat, { image: buffer, caption: "🖼️ Text to Image\n─────────────────────────\n⚙️ Made with ❤️ by *DANUKA DISANAYAKA💫*" }, { quoted: mek });
+    await robin.sendMessage(m.chat, { image: buffer, caption: "🖼️ Text to Image\n──────────────────────\n⚙️ Made with ❤️ by *DANUKA DISANAYAKA💫*" }, { quoted: mek });
     await fs.unlink(fileName);
   }
 );
