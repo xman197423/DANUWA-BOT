@@ -202,6 +202,26 @@ jobs:
 
 ---
 
+🚄 How to Deploy DANUWA-MD on Railway
+
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&duration=3000&pause=1000&color=10B981&center=true&vCenter=true&width=600&lines=Deploy+via+Railway;Easy+one+tap+deployment" alt="Typing SVG" />
+</p>
+
+You can easily deploy your own instance of DANUWA-MD on Railway with just one click.
+
+1. Click the "Deploy on Railway" button.
+
+2. Connect your GitHub account and authorize access if prompted.
+
+3. Click deploy now button.
+
+4. Fill in the required environment variables (e.g., SESSION_ID, OWNER_NUMBER, etc.).
+
+Click "Deploy" — Railway will handle the rest!
+
+---
+
 ## ✅ Features
 
 <p align="center">
