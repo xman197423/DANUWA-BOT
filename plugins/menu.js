@@ -4,7 +4,7 @@ const config = require("../config");
 cmd(
   {
     pattern: "menu",
-    react: "⚙"
+    react: "⚙",
     desc: "Displays all available commands",
     category: "main",
     filename: __filename,
@@ -12,14 +12,18 @@ cmd(
   async (conn, mek, m, { from, pushname, reply }) => {
     try {
       const categoryOrder = [
+        "group",
+        "utilities",
+        "tools",
+        "download",
+        "convert",
+        "logo",
+        "anime",
+        "ai",
+        "search",
+        "system",
         "main",
         "owner",
-        "group",
-        "tools",
-        "media",
-        "download",
-        "fun",
-        "search",
         "other"
       ];
 
