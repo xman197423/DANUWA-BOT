@@ -77,10 +77,20 @@
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&duration=3000&pause=1000&color=10B981&center=true&vCenter=true&width=600&lines=Deploy+via+GitHub+Codespaces;Deploy+via+GitHub+Actions;Deploy+via+Replit" alt="Typing SVG" />
 </p>
 
-[![🚀 DEPLOY IN GITHUB CODESPACES](https://img.shields.io/badge/🚀%20DEPLOY%20IN-GITHUB%20CODESPACES-blue?logo=github&style=for-the-badge)](https://github.com/codespaces/new?hide_repo_select=true&repo=danuwa-bot/DANUWA-MD)  
-[![⚡ DEPLOY IN REPLIT](https://img.shields.io/badge/⚡%20DEPLOY%20IN-REPLIT-4631D4?logo=replit&logoColor=white&style=for-the-badge)](https://replit.com)  
-[![🚀 DEPLOY IN GITHUB](https://img.shields.io/badge/🚀%20DEPLOY%20IN-GITHUB%20ACTIONS-blue?logo=githubactions&style=for-the-badge)](https://github.com/your-username/DANUWA-MD/actions)\n
-[![⚡ Deploy on Railway](https://railway.com/button.svg)](https://railway.com/template/T8aDDx?referralCode=waZbF9)
+<p align="center">
+  <a href="https://github.com/codespaces/new?hide_repo_select=true&repo=danuwa-bot%2FDANUWA-MD">
+    <img src="https://img.shields.io/badge/🚀%20DEPLOY%20IN-GITHUB%20CODESPACES-blue?logo=github&style=for-the-badge" alt="Deploy in GitHub Codespaces"/>
+  </a>
+  <a href="https://replit.com/github/danuwa-bot/DANUWA-MD">
+    <img src="https://img.shields.io/badge/⚡%20DEPLOY%20IN-REPLIT-4631D4?logo=replit&logoColor=white&style=for-the-badge" alt="Deploy in Replit"/>
+  </a>
+  <a href="https://github.com/danuwa-bot/DANUWA-MD/actions">
+    <img src="https://img.shields.io/badge/🚀%20DEPLOY%20IN-GITHUB%20ACTIONS-2088FF?logo=githubactions&style=for-the-badge" alt="Deploy in GitHub Actions"/>
+  </a>
+  <a href="https://railway.app/template/T8aDDx?referralCode=waZbF9">
+    <img src="https://railway.app/button.svg" alt="Deploy on Railway"/>
+  </a>
+</p>
 
 ---
 
