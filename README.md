@@ -77,25 +77,26 @@
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&duration=3000&pause=1000&color=10B981&center=true&vCenter=true&width=600&lines=Deploy+via+GitHub+Codespaces;Deploy+via+GitHub+Actions;Deploy+via+Replit" alt="Typing SVG" />
 </p>
 
-<div align="center" style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+<div align="center">
 
   <a href="https://github.com/codespaces/new?hide_repo_select=true&repo=danuwa-bot%2FDANUWA-MD">
-    <img src="https://img.shields.io/badge/🚀%20Deploy%20in-GitHub%20Codespaces-blue?logo=github&style=for-the-badge" alt="Deploy in GitHub Codespaces" />
+    <img src="https://img.shields.io/badge/🚀%20Deploy%20in-GitHub%20Codespaces-blue?logo=github&style=for-the-badge&logoWidth=30" alt="Deploy in GitHub Codespaces" style="margin: 10px 0; transform: scale(1.2);" />
   </a>
 
   <a href="https://replit.com/github/danuwa-bot/DANUWA-MD">
-    <img src="https://img.shields.io/badge/⚡%20Deploy%20in-Replit-4631D4?logo=replit&logoColor=white&style=for-the-badge" alt="Deploy in Replit" />
+    <img src="https://img.shields.io/badge/⚡%20Deploy%20in-Replit-4631D4?logo=replit&logoColor=white&style=for-the-badge&logoWidth=30" alt="Deploy in Replit" style="margin: 10px 0; transform: scale(1.2);" />
   </a>
 
   <a href="https://github.com/danuwa-bot/DANUWA-MD/actions">
-    <img src="https://img.shields.io/badge/🚀%20Deploy%20in-GitHub%20Actions-2088FF?logo=githubactions&style=for-the-badge" alt="Deploy in GitHub Actions" />
+    <img src="https://img.shields.io/badge/🚀%20Deploy%20in-GitHub%20Actions-2088FF?logo=githubactions&style=for-the-badge&logoWidth=30" alt="Deploy in GitHub Actions" style="margin: 10px 0; transform: scale(1.2);" />
   </a>
 
   <a href="https://railway.app/template/T8aDDx?referralCode=waZbF9">
-    <img src="https://railway.app/button.svg" alt="Deploy on Railway" style="height: 32px;" />
+    <img src="https://railway.app/button.svg" alt="Deploy on Railway" style="height: 50px; margin: 10px 0; transform: scale(1.1);" />
   </a>
 
 </div>
+
 
 
 ---
