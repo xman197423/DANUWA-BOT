@@ -24,7 +24,8 @@ cmd(
         "system",
         "main",
         "owner",
-        "other"
+        "other",
+        "education"
       ];
 
       let heading = `
