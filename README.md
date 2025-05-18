@@ -80,17 +80,17 @@
 <div align="center">
 
   <a href="https://github.com/codespaces/new?hide_repo_select=true&repo=danuwa-bot/DANUWA-MD">
-    <img src="https://img.shields.io/badge/🚀%20DEPLOY%20IN-GITHUB%20CODESPACES-blue?logo=github&style=for-the-badge" height="250" alt="GitHub Codespaces"/>
+    <img src="https://img.shields.io/badge/🚀%20DEPLOY%20IN-GITHUB%20CODESPACES-blue?logo=github&style=for-the-badge" height="50" width="250" alt="GitHub Codespaces"/>
   </a>
   <br><br>
 
   <a href="https://replit.com/github/danuwa-bot/DANUWA-MD">
-    <img src="https://img.shields.io/badge/⚡%20DEPLOY%20IN-REPLIT-4631D4?logo=replit&logoColor=white&style=for-the-badge" width="250" alt="Replit"/>
+    <img src="https://img.shields.io/badge/⚡%20DEPLOY%20IN-REPLIT-4631D4?logo=replit&logoColor=white&style=for-the-badge" height="50" width="250" alt="Replit"/>
   </a>
   <br><br>
 
   <a href="https://github.com/danuwa-bot/DANUWA-MD/actions">
-    <img src="https://img.shields.io/badge/🚀%20DEPLOY%20IN-GITHUB%20ACTIONS-2088FF?logo=githubactions&style=for-the-badge" width="250" alt="GitHub Actions"/>
+    <img src="https://img.shields.io/badge/🚀%20DEPLOY%20IN-GITHUB%20ACTIONS-2088FF?logo=githubactions&style=for-the-badge" height="50" width="250" alt="GitHub Actions"/>
   </a>
   <br><br>
 
@@ -99,9 +99,6 @@
   </a>
 
 </div>
-
-
-
 
 ---
 
