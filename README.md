@@ -80,6 +80,7 @@
 [![🚀 DEPLOY IN GITHUB CODESPACES](https://img.shields.io/badge/🚀%20DEPLOY%20IN-GITHUB%20CODESPACES-blue?logo=github&style=for-the-badge)](https://github.com/codespaces/new?hide_repo_select=true&repo=danuwa-bot/DANUWA-MD)  
 [![⚡ DEPLOY IN REPLIT](https://img.shields.io/badge/⚡%20DEPLOY%20IN-REPLIT-4631D4?logo=replit&logoColor=white&style=for-the-badge)](https://replit.com)  
 [![🚀 DEPLOY IN GITHUB](https://img.shields.io/badge/🚀%20DEPLOY%20IN-GITHUB%20ACTIONS-blue?logo=githubactions&style=for-the-badge)](https://github.com/your-username/DANUWA-MD/actions)
+[![⚡ Deploy on Railway](https://railway.com/button.svg)](https://railway.com/template/T8aDDx?referralCode=waZbF9)
 
 ---
 
