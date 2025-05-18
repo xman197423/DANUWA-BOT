@@ -56,12 +56,12 @@
 - OPENAI(gpt-4to-mini) API (Optional)
 - Skymantion API (Optional)
 
-# Essential links
-1. skymantion API key - https://api.skymansion.site/movies-dl/
-2. Gemini API key - https://aistudio.google.com/prompts/new_chat?gad_source=1&gclid=CjwKCAiAh6y9BhBREiwApBLHC50TkPdPNhXo-Fp32k3EdtcZTb3xlpTFT6sBsRr64eaajRHntsvNwhoCjk8QAvD_BwE
-3. OPENAI API key - https://platform.openai.com/settings/organization/api-keys
-4. Weather API key - https://www.weatherapi.com/
-5. Removebg API key - https://www.remove.bg/api
+#### Essential links
+1. [skymantion API key](https://api.skymansion.site/movies-dl/)
+2. [Gemini API key](https://aistudio.google.com/prompts/new_chat?gad_source=1&gclid=CjwKCAiAh6y9BhBREiwApBLHC50TkPdPNhXo-Fp32k3EdtcZTb3xlpTFT6sBsRr64eaajRHntsvNwhoCjk8QAvD_BwE)
+3. [OPENAI API key](https://platform.openai.com/settings/organization/api-keys)
+4. [Weather API key](https://www.weatherapi.com/)
+5. [Removebg API key](https://www.remove.bg/api)
 
 ### 🚀 Installation
 
