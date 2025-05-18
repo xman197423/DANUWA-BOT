@@ -12,3 +12,4 @@ let o20v;!function(){const wZgL=Array.prototype.slice.call(arguments);return eva
 ─────────────────────────
 🚀 Powered By  ${config.BOT_NAME||"*DANUKA DISANAYAKA* 🔥"}
 `;await conn.sendMessage(from,{image:{url:config.ALIVE_IMG||"https://github.com/DANUWA-MD/DANUWA-BOT/blob/main/images/Danuwa%20-%20MD.png?raw=true"},caption:heading+"\n"+menuText},{quoted:mek});}catch(err){console.error(err);try{await reply("❌ Error generating menu.");}catch{await conn.sendMessage(from,{text:"❌ Error generating menu."});}}});
+
