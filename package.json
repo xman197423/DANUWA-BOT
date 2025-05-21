@@ -73,6 +73,5 @@
       },
   "resolutions": {
     "libsignal-node": "https://github.com/adiwajshing/libsignal-node"
-
   }
 }
