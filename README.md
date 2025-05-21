@@ -101,7 +101,7 @@
   </a>
   <br><br>
 
-  <a href="https://railway.com/template/9PFuAR?referralCode=nNyW1K">
+  <a href="https://railway.com/template/WTWrbI">
     <img src="https://railway.app/button.svg" width="250" alt="Railway"/>
   </a>
 
