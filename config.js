@@ -24,6 +24,7 @@ const defaultConfig = {
   BOT_OWNER: "94776121326", // Replace your bot owner number here with 94(country code)
   ownerNumber: ["94776121326"], // Replace your bot owner number here (same as bot owner number)
   AUTO_READ_STATUS: "true", // Turn on or off auto read status from here
+  MODE: "public", // 'private', 'public', or 'admin'
 };
 
 
@@ -43,4 +44,6 @@ module.exports = {
     ? process.env.OWNER_NUMBER.split(",")
     : defaultConfig.ownerNumber,
   AUTO_READ_STATUS: convertToBool(process.env.AUTO_READ_STATUS, defaultConfig.AUTO_READ_STATUS),
+  MODE: process.env.MODE || defaultConfig.MODE,
+
 };
