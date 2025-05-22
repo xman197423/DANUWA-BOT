@@ -25,7 +25,6 @@ const currencyToCountry = {
   CAD: "CA",
   SGD: "SG",
   CNY: "CN",
-  // Add more if needed
 };
 
 cmd(
