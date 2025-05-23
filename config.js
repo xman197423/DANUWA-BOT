@@ -23,7 +23,7 @@ const defaultConfig = {
   BOT_OWNER: "94776121326", // Replace your bot owner number here with 94(country code)
   ownerNumber: ["94776121326"], // Replace your bot owner number here (same as bot owner number)
   AUTO_READ_STATUS: "true", // Turn on or off auto read status from here
-  MODE: "public", // 'private', 'public', or 'admin'
+  MODE: "public", // 'private', 'public'
 };
 
 //*******************************************************************************************************************************************************
