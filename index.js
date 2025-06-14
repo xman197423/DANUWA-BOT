@@ -4,11 +4,20 @@ const {
   DisconnectReason,
   jidNormalizedUser,
   getContentType,
-  fetchLatestBaileysVersion,
-  Browsers,
-  downloadMediaMessage,
+  proto,
+  generateWAMessageContent,
+  generateWAMessage,
+  AnyMessageContent,
+  prepareWAMessageMedia,
+  areJidsSameUser,
+  downloadContentFromMessage,
+  MessageRetryMap,
+  generateForwardMessageContent,
+  generateWAMessageFromContent,
+  generateMessageID, makeInMemoryStore,
   jidDecode,
-  proto: WAProto
+  fetchLatestBaileysVersion,
+  Browsers
 } = require('@whiskeysockets/baileys');
 
 const fs = require('fs');
@@ -129,7 +138,7 @@ async function connectToWA() {
   await conn.sendMessage(user, { text: text, react: { text: '✈️', key: mek.key } }, { quoted: mek })
             }
 
-    const m = sms(conn, mek);
+ const m = sms(conn, mek);
     const type = getContentType(mek.message);
     const from = mek.key.remoteJid;
     const body = type === 'conversation'
@@ -141,7 +150,7 @@ async function connectToWA() {
     const args = body.trim().split(/ +/).slice(1);
     const q = args.join(' ');
 
-    const sender = mek.key.fromMe ? conn.user.id : (mek.key.participant || mek.key.remoteJid);
+    const sender = mek.key.fromMe ? (conn.user.id.split(':')[0]+'@s.whatsapp.net' || conn.user.id) : (mek.key.participant || mek.key.remoteJid)
     const senderNumber = sender.split('@')[0];
     const isGroup = from.endsWith('@g.us');
     const botNumber = conn.user.id.split(':')[0];
@@ -158,6 +167,7 @@ async function connectToWA() {
     const isAdmins = isGroup ? groupAdmins.includes(sender) : false;
 
     const reply = (text) => conn.sendMessage(from, { text }, { quoted: mek });
+
 conn.decodeJid = jid => {
     if (!jid) return jid;
     if (/:\d+@/gi.test(jid)) {
