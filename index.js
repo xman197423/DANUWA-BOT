@@ -7,6 +7,7 @@ const {
   fetchLatestBaileysVersion,
   Browsers,
   downloadMediaMessage,
+  jidDecode,
   proto: WAProto
 } = require('@whiskeysockets/baileys');
 
@@ -14,6 +15,7 @@ const fs = require('fs');
 const P = require('pino');
 const config = require('./config');
 const { ownerNumber } = require('./config');
+const { BOT_OWNER } = require('./config');
 const util = require('util');
 const axios = require('axios');
 const qrcode = require('qrcode-terminal');
@@ -95,23 +97,37 @@ async function connectToWA() {
 
   conn.ev.on('creds.update', saveCreds);
 
-  conn.ev.on('messages.upsert', async ({ messages }) => {
-    const mek = messages[0];
-    if (!mek || !mek.message) return;
-
-    let message = mek.message;
-    if (getContentType(message) === 'ephemeralMessage') message = message.ephemeralMessage.message;
-    if (getContentType(message) === 'viewOnceMessage') message = message.viewOnceMessage.message;
-    mek.message = message;
-
-    if (mek.key.remoteJid === 'status@broadcast' && config.AUTO_READ_STATUS === "true") {
-      try {
-        await conn.readMessages([mek.key]);
-        console.log("[STATUS] ✅ Status message marked as read.");
-      } catch (err) {
-        console.error('[STATUS ERROR] Failed to auto-read status:', err.message);
-      }
+ conn.ev.on('messages.upsert', async(mek) => {
+    mek = mek.messages[0]
+    if (!mek.message) return
+    mek.message = (getContentType(mek.message) === 'ephemeralMessage') 
+    ? mek.message.ephemeralMessage.message 
+    : mek.message;
+  if (config.READ_MESSAGE === 'true') {
+    await conn.readMessages([mek.key]); 
+    console.log(`Marked message from ${mek.key.remoteJid} as read.`);
+  }
+    if(mek.message.viewOnceMessageV2)
+    mek.message = (getContentType(mek.message) === 'ephemeralMessage') ? mek.message.ephemeralMessage.message : mek.message
+    if (mek.key && mek.key.remoteJid === 'status@broadcast' && config.AUTO_STATUS_SEEN === "true"){
+      await conn.readMessages([mek.key])
     }
+     if (mek.key && mek.key.remoteJid === 'status@broadcast' && config.AUTO_STATUS_REACT === "true"){
+    const jawadlike = await conn.decodeJid(conn.user.id);
+    const emojis = ['❤️', '💸', '😇', '🍂', '💥', '💯', '🔥', '💫', '💎', '💗', '🤍', '🖤', '👀', '🙌', '🙆', '🚩', '🥰', '💐', '😎', '🤎', '✅', '🫀', '🧡', '😁', '😄', '🌸', '🕊️', '🌷', '⛅', '🌟', '🗿', '💜', '💙', '🌝', '🖤', '💚'];
+    const randomEmoji = emojis[Math.floor(Math.random() * emojis.length)];
+    await conn.sendMessage(mek.key.remoteJid, {
+      react: {
+        text: randomEmoji,
+        key: mek.key,
+      } 
+    }, { statusJidList: [mek.key.participant, jawadlike] });
+  }                        
+  if (mek.key && mek.key.remoteJid === 'status@broadcast' && config.AUTO_STATUS_REPLY === "true"){
+  const user = mek.key.participant
+  const text = `${config.AUTO_STATUS__MSG}`
+  await conn.sendMessage(user, { text: text, react: { text: '✈️', key: mek.key } }, { quoted: mek })
+            }
 
     const m = sms(conn, mek);
     const type = getContentType(mek.message);
@@ -142,7 +158,19 @@ async function connectToWA() {
     const isAdmins = isGroup ? groupAdmins.includes(sender) : false;
 
     const reply = (text) => conn.sendMessage(from, { text }, { quoted: mek });
-
+conn.decodeJid = jid => {
+    if (!jid) return jid;
+    if (/:\d+@/gi.test(jid)) {
+      let decode = jidDecode(jid) || {};
+      return (
+        (decode.user &&
+          decode.server &&
+          decode.user + '@' + decode.server) ||
+        jid
+      );
+    } else return jid;
+  };
+   
     if (isCmd) {
       const cmd = commands.find((c) => c.pattern === commandName || (c.alias && c.alias.includes(commandName)));
       if (cmd) {
@@ -185,6 +213,7 @@ switch ((config.MODE || 'public').toLowerCase()) {
     }
   });
 }
+
 
 app.get("/", (req, res) => {
   res.send("Hey, DANUWA-MD started✅");
