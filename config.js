@@ -21,13 +21,18 @@ const defaultConfig = {
   WEATHER_API_KEY: "", // Add your weather API key here
   BOT_OWNER: "94776121326", // Replace your bot owner number here with 94(country code)
   ownerNumber: ["94776121326"], // Replace your bot owner number here (same as bot owner number)
-  AUTO_READ_STATUS: "true", // Turn on or off auto read status from here
+  AUTO_STATUS_REACT: "true",
+  AUTO_STATUS_REPLY: "true",
+  AUTO_STATUS_SEEN: "true",
   MODE: "public", // 'private', 'public'
 };
 
 //*******************************************************************************************************************************************************
 
 module.exports = {
+  AUTO_STATUS_REACT: process.env.AUTO_STATUS_REACT || defaultConfig.AUTO_STATUS_REACT,
+  AUTO_STATUS_REACT: process.env.AUTO_STATUS_REPLY|| defaultConfig.AUTO_STATUS_REPLY,
+  AUTO_STATUS_REACT: process.env.AUTO_STATUS_SEEN || defaultConfig.AUTO_STATUS_SEEN,
   SESSION_ID: process.env.SESSION_ID || defaultConfig.SESSION_ID,
   ALIVE_IMG: process.env.ALIVE_IMG || defaultConfig.ALIVE_IMG,
   ALIVE_MSG: process.env.ALIVE_MSG || defaultConfig.ALIVE_MSG,
@@ -36,8 +41,8 @@ module.exports = {
   REMOVE_BG_API_KEY: process.env.REMOVE_BG_API_KEY || defaultConfig.REMOVE_BG_API_KEY, 
   WEATHER_API_KEY: process.env.WEATHER_API_KEY || defaultConfig.WEATHER_API_KEY,
   BOT_OWNER: process.env.BOT_OWNER || defaultConfig.BOT_OWNER,
-  ownerNumber: process.env.OWNER_NUMBER
-    ? process.env.OWNER_NUMBER.split(",")
+  ownerNumber: process.env.ownerNumber
+    ? process.env.ownerNumber.split(",")
     : defaultConfig.ownerNumber,
   AUTO_READ_STATUS: convertToBool(process.env.AUTO_READ_STATUS, defaultConfig.AUTO_READ_STATUS),
   MODE: process.env.MODE || defaultConfig.MODE,
