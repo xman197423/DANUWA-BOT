@@ -2,7 +2,7 @@ const { cmd } = require("../command");
 const { buildMenuByCategory } = require("../lib/menuhelper");
 
 const BRAND_HEADER = (title) => `
-╭〔 ⚡ *ＤＡＮＵＷＡ－ＭＤ* ⚡ 〕╮
+╭〔 ⚡ *XMAN－ＭＤ* ⚡ 〕╮
 ┃ 💫 𝗖𝗮𝘁𝗲𝗴𝗼𝗿𝘆: ${title}
 ┃ 📌 𝗧𝗼𝘁𝗮𝗹 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀: Auto Counted
 ╰━━━━━━━━━━━━━━━━━━━━━⬣
@@ -11,7 +11,7 @@ const BRAND_HEADER = (title) => `
 const BRAND_FOOTER = `
 ┃━━━━━━━━━━━━━━━━━━━━━⬣
 ┃⚙️ Made with ❤️ by 
-╰─🔥 *_DANUKA DISANAYAKA_*🔥─⬣`;
+╰─🔥 *_XMANKING_*🔥─⬣`;
 
 function formatMenu(category, title) {
     const commands = buildMenuByCategory(category, title);
