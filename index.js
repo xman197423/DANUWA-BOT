@@ -77,8 +77,8 @@ async function connectToWA() {
           require("./plugins/" + plugin);
         }
       });
-      console.log("✅ [DANUWA-MD] Plugins installed successfully.");
-      console.log("📶 [DANUWA-MD] Successfully connected to WhatsApp!");
+      console.log("✅ [XMAN-MD] Plugins installed successfully.");
+      console.log("📶 [XMAN-MD] Successfully connected to WhatsApp!");
 
       const up = `
 ╔═══◉ *🟢 STATUS: ONLINE* ◉═══╗
@@ -88,14 +88,14 @@ async function connectToWA() {
 
 🧾 *PROFILE INFORMATION*
 ┌──────── ⋆⋅☆⋅⋆ ────────┐
-│ 🔐 *Owner:* Danuka Disanayaka  
-│ 👤 *Botname:* DANUWA-MD  
+│ 🔐 *Owner:* XMANking  
+│ 👤 *Botname:* XMAN-MD  
 │ ⚡ *Bio:* Powerful WhatsApp Bot  
 │ 🧩 *Role:* Wizard Lord 🧙‍♂️  
 └──────── ⋆⋅☆⋅⋆ ────────┘
 
-🚀 Powered By *DANUKA*
-*DISANAYAKA* 🔥
+🚀 Powered By *XMAN*
+*XMAN* 🔥
       `;
       conn.sendMessage(ownerNumber[0] + "@s.whatsapp.net", {
         image: { url: config.ALIVE_IMG },
@@ -226,7 +226,7 @@ switch ((config.MODE || 'public').toLowerCase()) {
 
 
 app.get("/", (req, res) => {
-  res.send("Hey, DANUWA-MD started✅");
+  res.send("Hey, XMAN-MD started✅");
 });
 
 app.listen(port, () => console.log(`🌐 [DANUWA-MD] Web server running → http://localhost:${port}`));
